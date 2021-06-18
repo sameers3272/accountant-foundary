@@ -158,21 +158,21 @@ Section background image
             $('.scrollup').removeClass('back-top');
         }
         // Sticky Header
-        if ($('body').hasClass('sticky-header')) {
-            var stickyPlaceHolder = $("#rt-sticky-placeholder"),
-                menu = $("#header-menu"),
-                menuH = menu.outerHeight(),
-                topHeaderH = $('#header-topbar').outerHeight() || 0,
-                middleHeaderH = $('#header-middlebar').outerHeight() || 0,
-                targrtScroll = topHeaderH + middleHeaderH;
-            if ($(window).scrollTop() > targrtScroll) {
+        // if ($('body').hasClass('sticky-header')) {
+        //     var stickyPlaceHolder = $("#rt-sticky-placeholder"),
+        //         menu = $("#header-menu"),
+        //         menuH = menu.outerHeight(),
+        //         topHeaderH = $('#header-topbar').outerHeight() || 0,
+        //         middleHeaderH = $('#header-middlebar').outerHeight() || 0,
+        //         targrtScroll = topHeaderH + middleHeaderH;
+        //     if ($(window).scrollTop() > targrtScroll) {
               
-                menu.addClass('rt-sticky');
-            } else {
+        //         menu.addClass('rt-sticky');
+        //     } else {
                
-                menu.removeClass('rt-sticky');
-            }
-        }
+        //         menu.removeClass('rt-sticky');
+        //     }
+        // }
     });
 
     /*-------------------------------------

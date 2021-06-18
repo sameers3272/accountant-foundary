@@ -1,6 +1,7 @@
 html {
   height: 100%;
   width: 100%;
+  scroll-behavior: smooth;
 }
 body {
   font-size: 16px;
@@ -2375,11 +2376,11 @@ header.header {
 }
 .logo-area2:before {
   content: "";
-  height: 105px;
+  height:85px;
   width: 1px;
   background-color: #e2e2e2;
   position: absolute;
-  bottom: -29px;
+  bottom: 0px;
   right: -77px;
 }
 @media only screen and (max-width: 1199px) {
