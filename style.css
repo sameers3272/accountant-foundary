@@ -2590,6 +2590,11 @@ nav.template-main-menu > ul > li ul.dropdown-menu-col-1 li a:hover {
   color: #fa360a;
   padding-left: 40px;
 }
+nav.template-main-menu > ul > li ul.dropdown-menu-col-1 li a.active{
+  color: #fa360a;
+ 
+}
+
 nav.template-main-menu > ul > li ul.dropdown-menu-col-1 li a:hover:before {
   transform: scale(1);
 }
