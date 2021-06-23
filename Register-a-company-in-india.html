@@ -47,13 +47,13 @@
     <div id="preloader"></div>
     <!-- Add your site or application content here -->
     <div class="wrapper" id="wrapper">
-      <!--=====================================-->
+   <!--=====================================-->
         <!--=            Header Start           =-->
         <!--=====================================-->
         <header class="header">
             
             <div id="rt-sticky-placeholder"></div>
-            <div id="header-menu" class="header-menu menu-layout1 rt-sticky">
+            <div id="header-menu" class="header-menu menu-layout1 rt-sticky d-flex align-items-center">
                 <div class="container">
                     <div class="row d-flex align-items-center">
                         <div class="col-xl-3 col-lg-3">
@@ -70,7 +70,7 @@
                                         <a href="index.html" class="no-padding ">Home</a>
                                     </li>
                                    <li>
-                                        <a href="index.html#services" class="no-padding active">Services</a>
+                                        <a href="#services" class="no-padding active">Services</a>
                                         <ul class="dropdown-menu-col-1">
                                             <li>
                                                 <a href="./book-keeping.html">Bookkeeping</a>
@@ -95,14 +95,27 @@
                                     <li>
                                         <a href="contact.html">Contact Us</a>
                                     </li>
-                                
+                                    <li class="d-lg-none">
+                                        <a href="./sign-in.html" style="text-transform: capitalize;"><i class="icofont-sign-in"></i> Sign in</a>
+                                    </li>
                                    
                                 </ul>
                             </nav>
                         </div>
-                 
+                       
                     </div>
                 </div>
+             
+                <nav class="template-main-menu">
+                    <ul>
+                       
+                        <li>
+                            <a href="./sign-in.html" style="text-transform: capitalize;"><i class="icofont-sign-in"></i> Sign in</a>
+                        </li>
+                       </ul>
+                </nav>
+               
+               
             </div>
         </header>
         <!--=====================================-->
@@ -138,6 +151,47 @@
         <section class="single-service-wrap1">
             <div class="container">
                 <div class="row gutters-50">
+                    <div class="col-lg-12 py-5">
+                        <div class="contact-box3" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+                            <div class="contact-bg-image">
+                                <img src="img/figure/figure94.png" alt="figure" width="266" height="214">
+                            </div>
+                            <div class="item-heading">
+                                <h2 class="item-title">Register Your Company</h2>
+                              <br>
+                            </div>
+                            <form method="POST" action="actions/add-company.php" enctype="multipart/form-data" class="message-box" id="contact-form">
+                                <div class="row gutters-10">
+                                    <div class="col-lg-12 form-group" >
+                                        <input type="text" class="form-control"  id="company_name" name="company_name" placeholder="Company Name*" data-error="Company Name is required" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="col-lg-12 form-group">
+                                        <input type="text" class="form-control" id="company_ownername" name="company_ownername" placeholder="Your Full Name*" data-error="Full Name is required" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="col-lg-4 form-group">
+                                        <input type="text" class="form-control" id="company_phone" name="company_phone" placeholder="Contact Number*" data-error="Contact Number is required" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="col-lg-4 form-group">
+                                        <input  class="form-control"  id="company_email" type="email" name="company_email" placeholder="Email Id*" data-error="Email Id is required" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+            
+                                    <div class="col-lg-4 form-group">
+                                        <input type="text" class="form-control" id="company_password"  name="company_password" placeholder="Password*" data-error="Password  is required" required>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                   
+                                    <div class="col-lg-12 form-group">
+                                        <button type="submit" name="action" class="item-btn">Save  Details</button>
+                                    </div>
+                                </div>
+                                <div class="form-response"></div>
+                            </form>
+                        </div>
+                    </div>
                     <div class="col-lg-4 widget-break-lg sidebar-widget">
                         <div class="widget widget-financial-service">
                             <div class="financial-list">
@@ -173,7 +227,7 @@
                                     <div class="item-icon"><i class="fas fa-phone-alt"></i></div>
                                     <div class="item-number">1-234-567-89</div>
                                 </div>
-                                <div class="phone-number-layout phone-number-layout2">
+                                <div class="phone-number-layout phone-number-layout2 ">
                                     <div class="item-icon"><i class="fas fa-phone-alt"></i></div>
                                     <div class="item-number">1-234-567-89</div>
                                 </div>
@@ -191,7 +245,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-8">
+                    <div class="col-lg-8 contact-wrap2 gutters-40" style="margin-top: 0; padding-top: 10px;">
+        <!--=====================================-->
+        <!--=       Regester Form Starts        =-->
+        <!--=====================================-->
+
+                       
+                  
+               
+         
+     
+
+
+
+
                         <div class="single-service-box1 single-service-box2">
                             <h2 class="section-title">Register A Company in India With Us</h2>
                             <p>Dorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequDuis aute irure.</p>
@@ -219,13 +286,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="research-area">
-                                <h2 class="section-title">Research & Analysis</h2>
-                                <p>Dorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore etteryu dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.Dorem ipsum dolor sit amet, consecteturdolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                <div class="graph-img">
-                                    <img src="img/figure/figure87.png" alt="figure" width="699" height="329">
-                                </div>
-                            </div>
+                            
                             <div class="tab-area">
                                 <ul class="nav nav-tabs" role="tablist">
                                     <li class="nav-item">
